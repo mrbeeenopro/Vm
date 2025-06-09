@@ -15,7 +15,7 @@ DOCKER_RUN="$install_path/dockerd \
     -b $install_path/etc/hostname:/proc/sys/kernel/hostname \
     -b $install_path$HOME/shared:$shared_path \
     -b $install_path:$install_path /bin/sh -c"
-osVer="3.21"
+osVer="3.20"
 detailOsVer="$osVer.0"
 
 getarch() {
@@ -53,32 +53,9 @@ printlogo() {
   printf "[[\033[94mH3L2F - Powered by \033[32mno\033[93mVNC\033[0m]]\n"
 }
 
-clear
-
 fcr() {
-  echo "[$( date +%H:%M:%S ) INFO]: [Lemem-vnc] done!"
-  NO_FORMAT="\033[0m"
-  C_PURPLE3="\033[38;5;56m"
-  echo -e "${C_PURPLE3}                                                                                                  
-                                                                               
-                        Ò¥DDDbÒ                  èÓÓÓÓë                        
-                      ðdFDDDDFFb               ýÓÓÞÞÞÞÞèÙ                      
-                    ¶$ëëFDDDDDDDFÒ           ÙèÓÞÞÞÞÞÞÞÞÞèý                    
-                   Üëëë$$ÒFDDDDDDFFÒ       $èÓÞÞÞÞÞÞÞÞÞÞÞÞÓý                   
-                 é$ëëëëëëëëbDDDDDDDDFb   ÙÓÓÓÞÞÞÞÞÓèèÓÞÞÞÞÞÞÓè                 
-               éÜëëëëëëë$8  Ö¥DDDDDDDD¥ÞèÓÞÞÞÞÞÓÓèë  dÓÓÞÞÞÞÞÞÓý               
-             é$$$ëëëëë$Ú      bFFDDDDDDFbÞÞÞÞÞÓèý      ýÓÞÞÞÓÓÓÞÞÓ             
-           8$ëëëëëëëëÜ          ÿFDDDDDDDFbÓÓèÙ          ýÓÓÞFDDDD¥Ò           
-           8ëëëëëëë$8             ÿ¥DDDDDDDFÒ             ÞbFDDDDDDb           
-           ø$ëëëëëëë$Ü          ÙèÓÓÒFDDDDDDFFÒ          bDDDDDDDFDÒ           
-             ð$ëëëëëë$$8      ýÓÓÞÞÞÓÓbFDDDDDDF¥Ò      ÒFDDDDDDFD¥             
-               ð$ëëëëëë$$é   ÓÓÓÞÞÞÞÞÓýè¥FDDDDDDDFÓ  ÒFDDDDDDFFÒ               
-                 8$ëëëëëëë$ÙÓÓÞÞÞÞÓÓèý   ÿ¥FDDDDDDD¥¥DDDDDDDF¥                 
-                   Ü$ëëëë$ë$$ýÓÓÞÓÓÙ       ÞFDDDDDDDDDDDDDDFÿ                  
-                    ¶Ü$ëëëëëë$dÓÓý           bFDDDDDDDDFDFÒ                    
-                      ø$ëëëëëëdè               bDDDDDDDFÒ                      
-                        é$ëë$$Ü                  bDDFF¥                                                                                          
-                                                                               ${NO_FORMAT}"
+  echo "[$( date +%H:%M:%S ) DONE!]: vnc is ip copy and paste in your browser and password is your serverid !"
+  
 }
 
 bootstrap_system() {
