@@ -1,6 +1,6 @@
 #!/bin/bash
 [ -z "$HOME" ] && [ -d "/home/container" ] && export HOME="/home/container"
-export HOSTNAME="lemem-aphine"
+export HOSTNAME="$(cat /proc/sys/kernel/hostname)"
 
 # Copyright (c) by H3L2F. All rights reserved.
 # https://h3l2f.site
