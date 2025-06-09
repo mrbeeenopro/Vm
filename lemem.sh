@@ -59,18 +59,7 @@ fcr() {
   echo "[$( date +%H:%M:%S ) INFO]: [Lemem-vnc] done!"
   NO_FORMAT="\033[0m"
   C_PURPLE3="\033[38;5;56m"
-  echo -e "${C_PURPLE3}                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
+  echo -e "${C_PURPLE3}                                                                                                  
                                                                                
                         Ò¥DDDbÒ                  èÓÓÓÓë                        
                       ðdFDDDDFFb               ýÓÓÞÞÞÞÞèÙ                      
@@ -88,19 +77,7 @@ fcr() {
                    Ü$ëëëë$ë$$ýÓÓÞÓÓÙ       ÞFDDDDDDDDDDDDDDFÿ                  
                     ¶Ü$ëëëëëë$dÓÓý           bFDDDDDDDDFDFÒ                    
                       ø$ëëëëëëdè               bDDDDDDDFÒ                      
-                        é$ëë$$Ü                  bDDFF¥                        
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
-                                                                               
+                        é$ëë$$Ü                  bDDFF¥                                                                                          
                                                                                ${NO_FORMAT}"
 }
 
