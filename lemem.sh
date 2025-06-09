@@ -53,74 +53,55 @@ printlogo() {
   printf "[[\033[94mH3L2F - Powered by \033[32mno\033[93mVNC\033[0m]]\n"
 }
 
+clear
+
 fcr() {
-  echo "[$( date +%H:%M:%S ) INFO]: [PluginInitializerManager] Initialized 0 plugins"
-  echo "[$( date +%H:%M:%S ) INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]"
-  echo "[$( date +%H:%M:%S ) INFO]: Found new data pack file/bukkit, loading it automatically"
-  echo "[$( date +%H:%M:%S ) INFO]: Found new data pack paper, loading it automatically"
-  echo "[$( date +%H:%M:%S ) INFO]: No existing world data, creating new world"
-  echo "[$( date +%H:%M:%S ) INFO]: Loaded 1370 recipes"
-  echo "[$( date +%H:%M:%S ) INFO]: Loaded 1481 advancements"
-  echo "[$( date +%H:%M:%S ) INFO]: [MCTypeRegistry] Initialising converters for DataConverter..."
-  echo "[$( date +%H:%M:%S ) INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 491.6ms"
-  echo "[$( date +%H:%M:%S ) INFO]: Starting minecraft server version 1.21.4"
-  echo "[$( date +%H:%M:%S ) INFO]: Loading properties"
-  echo "[$( date +%H:%M:%S ) INFO]: This server is running Paper version 1.21.4-194-main@ce30016 (2025-03-08T04:40:16Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)"
-  echo "[$( date +%H:%M:%S ) INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling"
-  echo "[$( date +%H:%M:%S ) INFO]: Using 4 threads for Netty based IO"
-  echo "[$( date +%H:%M:%S ) INFO]: Server Ping Player Sample Count: 12"
-  echo "[$( date +%H:%M:%S ) INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads"
-  echo "[$( date +%H:%M:%S ) INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true"
-  echo "[$( date +%H:%M:%S ) INFO]: Default game type: SURVIVAL"
-  echo "[$( date +%H:%M:%S ) INFO]: Generating keypair"
-  echo "[$( date +%H:%M:%S ) INFO]: Starting Minecraft server on 0.0.0.0:$SERVER_PORT"
-  echo "[$( date +%H:%M:%S ) INFO]: Using epoll channel type"
-  echo "[$( date +%H:%M:%S ) INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity."
-  echo "[$( date +%H:%M:%S ) INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity."
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing level \"world\""
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing start region for dimension minecraft:overworld"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 6%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 10%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 10%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 10%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 18%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 18%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 18%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 18%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 20%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 24%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 40%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 51%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 51%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 51%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 57%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 57%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 71%"
-  echo "[$( date +%H:%M:%S ) INFO]: Time elapsed: 13 ms"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing start region for dimension minecraft:the_nether"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 18%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 24%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 34%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 51%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 75%"
-  echo "[$( date +%H:%M:%S ) INFO]: Time elapsed: 56 ms"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing start region for dimension minecraft:the_end"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 2%"
-  echo "[$( date +%H:%M:%S ) INFO]: Preparing spawn area: 18%"
-  echo "[$( date +%H:%M:%S ) INFO]: Time elapsed: 28 ms"
-  echo "[$( date +%H:%M:%S ) INFO]: [spark] Starting background profiler..."
-  echo "[$( date +%H:%M:%S ) INFO]: Done preparing level \"world\" (0.097s)"
-  echo "[$( date +%H:%M:%S ) INFO]: Running delayed init tasks"
-  echo "[$( date +%H:%M:%S ) INFO]: Done (0.12s)! For help, type \"?\""
+  echo "[$( date +%H:%M:%S ) INFO]: [Lemem-vnc] done!"
+  NO_FORMAT="\033[0m"
+  C_PURPLE3="\033[38;5;56m"
+  echo -e "${C_PURPLE3}                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                        Ò¥DDDbÒ                  èÓÓÓÓë                        
+                      ðdFDDDDFFb               ýÓÓÞÞÞÞÞèÙ                      
+                    ¶$ëëFDDDDDDDFÒ           ÙèÓÞÞÞÞÞÞÞÞÞèý                    
+                   Üëëë$$ÒFDDDDDDFFÒ       $èÓÞÞÞÞÞÞÞÞÞÞÞÞÓý                   
+                 é$ëëëëëëëëbDDDDDDDDFb   ÙÓÓÓÞÞÞÞÞÓèèÓÞÞÞÞÞÞÓè                 
+               éÜëëëëëëë$8  Ö¥DDDDDDDD¥ÞèÓÞÞÞÞÞÓÓèë  dÓÓÞÞÞÞÞÞÓý               
+             é$$$ëëëëë$Ú      bFFDDDDDDFbÞÞÞÞÞÓèý      ýÓÞÞÞÓÓÓÞÞÓ             
+           8$ëëëëëëëëÜ          ÿFDDDDDDDFbÓÓèÙ          ýÓÓÞFDDDD¥Ò           
+           8ëëëëëëë$8             ÿ¥DDDDDDDFÒ             ÞbFDDDDDDb           
+           ø$ëëëëëëë$Ü          ÙèÓÓÒFDDDDDDFFÒ          bDDDDDDDFDÒ           
+             ð$ëëëëëë$$8      ýÓÓÞÞÞÓÓbFDDDDDDF¥Ò      ÒFDDDDDDFD¥             
+               ð$ëëëëëë$$é   ÓÓÓÞÞÞÞÞÓýè¥FDDDDDDDFÓ  ÒFDDDDDDFFÒ               
+                 8$ëëëëëëë$ÙÓÓÞÞÞÞÓÓèý   ÿ¥FDDDDDDD¥¥DDDDDDDF¥                 
+                   Ü$ëëëë$ë$$ýÓÓÞÓÓÙ       ÞFDDDDDDDDDDDDDDFÿ                  
+                    ¶Ü$ëëëëëë$dÓÓý           bFDDDDDDDDFDFÒ                    
+                      ø$ëëëëëëdè               bDDDDDDDFÒ                      
+                        é$ëë$$Ü                  bDDFF¥                        
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               ${NO_FORMAT}"
 }
 
 bootstrap_system() {
